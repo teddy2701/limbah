@@ -17,7 +17,7 @@ const Login = () => {
 
   const klikLogin = () => {
     axios
-      .post("http://localhost:4000/v1/auth/login", {
+      .post("https://aggressive-puce-dog.cyclic.cloud/v1/auth/login", {
         username,
         password,
       })
