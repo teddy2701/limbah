@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/limbah/static/css/main.a60b67b4.css",
+    "main.js": "/limbah/static/js/main.cc63339f.js",
+    "static/js/787.9b214ae2.chunk.js": "/limbah/static/js/787.9b214ae2.chunk.js",
+    "index.html": "/limbah/index.html",
+    "main.a60b67b4.css.map": "/limbah/static/css/main.a60b67b4.css.map",
+    "main.cc63339f.js.map": "/limbah/static/js/main.cc63339f.js.map",
+    "787.9b214ae2.chunk.js.map": "/limbah/static/js/787.9b214ae2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a60b67b4.css",
+    "static/js/main.cc63339f.js"
+  ]
+}
