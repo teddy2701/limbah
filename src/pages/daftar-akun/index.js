@@ -71,7 +71,7 @@ const DaftarAkun = () => {
     tampilData();
 
     axios
-      .get("http://localhost:4000/v1/perangkat")
+      .get("https://aggressive-puce-dog.cyclic.cloud/v1/perangkat")
       .then((result) => {
         const hasil = result.data.data;
         const ubah = hasil.map((index) => {
@@ -91,7 +91,7 @@ const DaftarAkun = () => {
 
   const tampilData = () => {
     axios
-      .get("http://localhost:4000/v1/akun")
+      .get("https://aggressive-puce-dog.cyclic.cloud/v1/akun")
       .then((result) => {
         setDataAkun(result.data.data);
       })
@@ -109,7 +109,9 @@ const DaftarAkun = () => {
           label: "Ya",
           onClick: () => {
             axios
-              .delete(`http://localhost:4000/v1/akun/delete/${id}`)
+              .delete(
+                `https://aggressive-puce-dog.cyclic.cloud/v1/akun/delete/${id}`
+              )
               .then((res) => {
                 tampilData();
               })
@@ -133,7 +135,10 @@ const DaftarAkun = () => {
       node: node,
     };
     axios
-      .post("http://localhost:4000/v1/akun/register", newData)
+      .post(
+        "https://aggressive-puce-dog.cyclic.cloud/v1/akun/register",
+        newData
+      )
       .then((res) => {
         // Perbarui daftar perangkat dengan data baru
         tampilData();
@@ -160,7 +165,7 @@ const DaftarAkun = () => {
         return tampilData();
       }
       const result = await axios.get(
-        `http://localhost:4000/v1/akun/akun/${e.target.value}`
+        `https://aggressive-puce-dog.cyclic.cloud/v1/akun/akun/${e.target.value}`
       );
       setDataAkun(result.data.data);
     } catch (error) {
@@ -203,7 +208,10 @@ const DaftarAkun = () => {
     }
 
     axios
-      .put(`http://localhost:4000/v1/akun/update/${id}`, newData)
+      .put(
+        `https://aggressive-puce-dog.cyclic.cloud/v1/akun/update/${id}`,
+        newData
+      )
       .then((res) => {
         tampilData();
       })

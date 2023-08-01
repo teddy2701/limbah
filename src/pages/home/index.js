@@ -99,7 +99,7 @@ const Home = () => {
 
     if (userData.node[0].value === "semua") {
       axios
-        .get("http://localhost:4000/v1/perangkat")
+        .get("https://aggressive-puce-dog.cyclic.cloud/v1/perangkat")
         .then((result) => {
           const hasil = result.data.data;
           const ubah = hasil.map((index) => {
